@@ -1,0 +1,166 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --black: black;
+    --black-blue: #161d27;
+    --black-green: #1f2d25;
+    --black-yellow: #2d2c1f;
+
+    --white: white;
+    --white-gray: #f0f8ff;
+    --white-green: #f4faf6;
+
+    --red: #df2020;
+    --orange: #ff8d5c;
+    --yellow: #ffc174;
+    --yellow-light: #faf1df;
+
+    --blue: #0c97ff;
+    --blue-light: #dfebf1;
+    --blue-dark: #0d5cb6;
+    --blue-black: #09203f;
+    --blue-db: #2d5d80;
+
+    --green: #2df3aa;
+    --green-dark: #25b580;
+    --green-light: #dff1ea;
+
+    --purple: #e574ff;
+    --pink: #fa7daf;
+    --beige: #c9ba9b;
+    --brown: #433625;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.hide {
+    display: none;
+}
+
+/* Header */
+.navbar-brand {
+    width: 60px;
+}
+
+.navbar-title {
+    flex-grow: 1;
+    font-weight: bold;
+}
+
+body {
+    background-color: var(--blue-light);
+}
+
+/* Content */
+.content {
+    width: 800px;
+    margin: auto;
+    background-color: var(--white);
+    height: 200vh;
+}
+
+.first-content {
+    background-image: url(./images/banner1_Mesa\ de\ trabajo\ 1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 1.25rem;
+    padding: 1rem;
+    height: 30vh;
+}
+
+.first-content span {
+    font-weight: bold;
+}
+
+.text-fc {
+    /* background-color: var(--white); */
+    color: var(--white);
+    padding: 2rem;
+}
+
+.second-content,
+.third-content {
+    padding: 3rem 2rem;
+}
+
+.second-content img,
+.third-content img {
+    border-radius: 10px;
+}
+
+.second-content {
+    border-bottom: 5px solid var(--black-blue);
+}
+
+.second-content .title,
+.third-content .title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.second-content .text {
+    text-align: justify;
+}
+
+.fourth-content .start,
+.fourth-content .submit {
+    font-weight: bold;
+    width: fit-content;
+    padding: 8px 20px;
+    margin: auto;
+    cursor: pointer;
+}
+
+.fourth-content .start {
+    background-color: var(--blue-dark);
+    color: var(--white);
+}
+
+.fourth-content .submit {
+    background-color: var(--blue-black);
+}
+
+.fourth-content .submit a {
+    color: var(--white);
+}
+
+.fourth-content .form-content {
+    padding: 2rem ;
+}
+
+.form-custom .question {
+    padding-right: 0.5rem;
+}
+
+.form-custom .answer {
+    padding: 6px;
+}
+
+.form-custom .answer input {
+    width: 1rem;
+    height: 1rem;
+}
+
+@media (min-width: 1024px) {
+    .navbar-title {
+        font-size: 1.7rem;
+    }
+}
+
