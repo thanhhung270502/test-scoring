@@ -15,8 +15,10 @@
     --white-green: #f4faf6;
 
     --red: #df2020;
+    --red-dark: #680e0e;
     --orange: #ff8d5c;
     --yellow: #ffc174;
+    --yellow-dark: #8e6100;
     --yellow-light: #faf1df;
 
     --blue: #0c97ff;
@@ -27,6 +29,7 @@
 
     --green: #2df3aa;
     --green-dark: #25b580;
+    --grean-black: #0b4d34;
     --green-light: #dff1ea;
 
     --purple: #e574ff;
@@ -63,12 +66,12 @@ a {
 }
 
 body {
-    background-color: var(--blue-light);
+    background-color: var(--white);
 }
 
 /* Content */
 .content {
-    width: 800px;
+    width: 1000px;
     margin: auto;
     background-color: var(--white);
     height: 200vh;
@@ -81,7 +84,7 @@ body {
     background-size: cover;
     font-size: 1.25rem;
     padding: 1rem;
-    height: 30vh;
+    height: 45vh;
 }
 
 .first-content span {
@@ -94,6 +97,21 @@ body {
     padding: 2rem;
 }
 
+.text-fc .title {
+    font-weight: bold;
+    font-size: 2.25rem;
+}
+
+.btn-read {
+    background-color: var(--red-dark);
+    color: var(--white);
+}
+
+.btn-download {
+    background-color: var(--grean-black);
+    color: var(--white);
+}
+
 .second-content,
 .third-content {
     padding: 3rem 2rem;
@@ -101,11 +119,11 @@ body {
 
 .second-content img,
 .third-content img {
-    border-radius: 10px;
+    border-radius: 30px;
 }
 
 .second-content {
-    border-bottom: 5px solid var(--black-blue);
+    /* border-bottom: 5px solid var(--black-blue); */
 }
 
 .second-content .title,
@@ -115,26 +133,32 @@ body {
     padding-bottom: 1rem;
 }
 
+.title i {
+    font-size: 1.7rem;
+    color: var(--blue-dark);
+}
+
 .second-content .text {
     text-align: justify;
 }
 
-.fourth-content .start,
-.fourth-content .submit {
+.btn-custom {
     font-weight: bold;
     width: fit-content;
-    padding: 8px 20px;
-    margin: auto;
+    padding: 10px 24px;
     cursor: pointer;
+    border-radius: 100px;
 }
 
 .fourth-content .start {
-    background-color: var(--blue-dark);
+    margin: auto;
+    background-color: var(--yellow-dark);
     color: var(--white);
 }
 
 .fourth-content .submit {
     background-color: var(--blue-black);
+    margin: auto;
 }
 
 .fourth-content .submit a {
