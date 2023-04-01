@@ -18,14 +18,15 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
 
   <!-- Manual CSS -->
-  <link rel="stylesheet" href="./assets/style/style.css">
+  <link rel="stylesheet" href="../assets/style/style.css">
+  <link rel="stylesheet" href="../assets/style/code.css">
 </head>
 <body>
   <header class="header-section">
     <nav class="navbar navbar-expand-lg bg-body-tertiary py-0">
       <div class="container-fluid justify-content-around">
         <a class="navbar-brand" href="./index.html">
-          <img src="./assets/images/hcmut.png" alt="" class="img-fluid">
+          <img src="../assets/images/hcmut.png" alt="" class="img-fluid">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -33,19 +34,22 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item header__item">
-              <a class="nav-link header__link header__active" aria-current="page" href="./index.html">Home</a>
+              <a class="nav-link header__link" aria-current="page" href="./index.html">Home</a>
             </li>
             <li class="nav-item header__item">
-              <a class="nav-link header__link" href="#">Service</a>
+              <a class="nav-link header__link header__active" href="./exam.html">Exam</a>
+            </li>
+            <li class="nav-item header__item">
+              <a class="nav-link header__link" href="./code.html">Code</a>
+            </li>
+            <li class="nav-item header__item">
+              <a class="nav-link header__link" href="./mark.html">Mark</a>
             </li>
             <li class="nav-item header__item">
               <a class="nav-link header__link" href="#">Contact</a>
             </li>
             <li class="nav-item header__item">
-              <a class="nav-link header__link" href="./logged/index.html">Login</a>
-            </li>
-            <li class="nav-item header__item">
-              <a class="nav-link header__link" href="#">Sign up</a>
+              <a class="nav-link header__link" href="../index.html">Log out</a>
             </li>
           </ul>
         </div>
@@ -63,21 +67,33 @@
     </div>
 
     <div class="section second-section">
-      <div class="d-flex align-items-center">
-        <div class="col-6 px-4">
-          <div class="title">
-            <i class="uil uil-adjust-circle"></i> Trường Đại học Bách Khoa TP.HCM
+      <div class="title text-center">Examination</div>
+      <div class="btn-custom btn-add mb-4">
+        Thêm mã đề
+      </div>
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">Nhập mã đề</span>
+        <input type="text" class="form-control" placeholder="xxxx" name="code">
+      </div>
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">Nhập số câu</span>
+        <input type="text" class="form-control socau" placeholder="" name="number">
+        <div class="btn-custom btn-add btn-submit">Submit</div>
+      </div>
+      <div class="key">
+        <div class="title">Đáp án:</div>
+        <div class="form-toggle">
+          <div class="row form-content">
           </div>
-          <div class="content">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, quia unde! Hic expedita voluptatem laudantium labore sit repellat libero illo beatae soluta ut odio aperiam ab similique, assumenda quam sed.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda tempore quaerat nesciunt repudiandae harum! Eligendi unde similique, commodi eaque doloremque mollitia deserunt doloribus, tempora sunt nisi aliquam odit, vero aliquid.</p>
+          <div class="d-flex mt-3">
+            <div class="btn-custom btn-cancel me-3" onclick="clear__form()">
+              Cancel
+            </div>
+            <div class="btn-custom btn-submit" onclick="clear__form()">
+              Submit
+            </div>
           </div>
-        </div>
-        <div class="col-6">
-          <div class="image">
-            <img src="./assets/images/Assest_1.jpg" alt="" class="img-fluid">
-          </div>
-        </div>
+        </div >
       </div>
     </div>
 
@@ -85,6 +101,6 @@
 
     </div>
   </div>
-  <script src="./main.js"></script>
+  <script src="../js/main.js"></script>
 </body>
 </html>
