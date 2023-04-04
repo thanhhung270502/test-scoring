@@ -135,6 +135,8 @@ btn_add_new_stu.onclick = () => {
             modal[index].style.display = "none";
         }
     })
+
+    z.setAttribute("src", "");
 }
 
 img.forEach((value, index) => {

@@ -91,6 +91,18 @@ btn__submitNumber.onclick = () => {
         form.appendChild(outer__place);
     }
 }
+var code = $('.code');
+code.onchange = () => {
+    if (code.value > 10000) {
+        code.value = parseInt(code.value.toString().substring(0,4));
+    }
+    else if (code.value < 0) {
+        code.value = Math.abs(code.value)
+        if (code.value > 10000) {
+            code.value = parseInt(code.value.toString().substring(0,4));
+        }
+    }
+}
 
 function clear__form() {
     form.textContent = '';
