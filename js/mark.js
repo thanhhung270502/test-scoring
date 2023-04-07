@@ -69,49 +69,26 @@ btn_add_new_stu.onclick = () => {
         col1.appendChild(modalz);
 
         // Họ tên
-        var name = document.createElement("div");
-        name.setAttribute("class", "name");
-        name.textContent = "Huỳnh Ngọc Thanh Thảo";
-
         var col2 = document.createElement("div");
         col2.setAttribute("class", "col-4 col-custom col-body border");
-        col2.appendChild(name);
+        col2.textContent = "Huỳnh Ngọc Thanh Thảo";
 
-        // Điểm
+        // Họ tên
         var col3 = document.createElement("div");
-        col3.setAttribute("class", "col-4 col-custom col-body border");
-        col3.textContent = "110/120";
+        col3.setAttribute("class", "col-2 col-custom col-body border");
+        col3.textContent = "2010301";
 
-        // Ảnh đã chấm
-        var frame2 = document.createElement("img");
-        frame2.setAttribute("src", z[i].src);
-        frame2.setAttribute("class", "img-fluid frame1");
-        frame2.setAttribute("id", "myImg");
-
-        // // Modal
-        var btn_close2 = document.createElement("span");
-        btn_close2.setAttribute("class", "close");
-        btn_close2.textContent = `x`;
-
-        var modal_img2 = document.createElement("img");
-        modal_img2.setAttribute("id", "img01");
-        modal_img2.setAttribute("class", "modal-content");
-
-        var caption2 = document.createElement("div");
-        caption2.setAttribute("id", "caption");
-
-        var modalz2 = document.createElement("div");
-        modalz2.setAttribute("class", "modal-custom");
-        modalz2.setAttribute("id", "myModal");
-        modalz2.setAttribute("style", "display: none;");
-        modalz2.appendChild(btn_close2);
-        modalz2.appendChild(modal_img2);
-        modalz2.appendChild(caption2);
-
+        // Họ tên
         var col4 = document.createElement("div");
         col4.setAttribute("class", "col-2 col-custom col-body border");
-        col4.appendChild(frame2);
-        col1.appendChild(modalz2);
+        col4.textContent = "1234";
+
+        // Điểm
+        var col5 = document.createElement("div");
+        col5.setAttribute("class", "col-2 col-custom col-body border");
+        col5.textContent = "110/120";
+
+        
 
         // Row
         var row = document.createElement("div");
@@ -120,6 +97,7 @@ btn_add_new_stu.onclick = () => {
         row.appendChild(col2);
         row.appendChild(col3);
         row.appendChild(col4);
+        row.appendChild(col5);
 
         // Place
         var place = $(".second-section");
