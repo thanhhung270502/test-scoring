@@ -70,10 +70,14 @@ btn_add_new_stu.onclick = () => {
 
         // Họ tên
         var col2 = document.createElement("div");
-        col2.setAttribute("class", "col-4 col-custom col-body border");
+        col2.setAttribute("class", "col-2 col-custom col-body border");
         col2.textContent = "Huỳnh Ngọc Thanh Thảo";
 
-        // Họ tên
+        var col6 = document.createElement("div");
+        col6.setAttribute("class", "col-2 col-custom col-body border");
+        col6.textContent = "";
+
+        // MSSV
         var col3 = document.createElement("div");
         col3.setAttribute("class", "col-2 col-custom col-body border");
         col3.textContent = "2010301";
@@ -95,6 +99,7 @@ btn_add_new_stu.onclick = () => {
         row.setAttribute("class", "d-flex table-custom");
         row.appendChild(col1);
         row.appendChild(col2);
+        row.appendChild(col6);
         row.appendChild(col3);
         row.appendChild(col4);
         row.appendChild(col5);
