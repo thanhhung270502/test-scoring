@@ -22,7 +22,6 @@ body {
     background-color: var(--blue-black);
     color: var(--white);
     font-family: 'Poppins', sans-serif;
-    /* height: 200vh; */
 }
 
 a {
@@ -85,7 +84,7 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     font-size: 1.25rem;
-    padding: 1rem 3rem;
+    padding: 1rem 7rem;
     height: 50vh;
     color: var(--white);
     text-align: justify;
