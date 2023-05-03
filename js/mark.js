@@ -1,4 +1,4 @@
-const $ = document.querySelector.bind(document);
+    const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
 const inputImage = $(".inputImage");
@@ -52,8 +52,8 @@ btn_add_new_stu.onclick = () => {
         modal_img.setAttribute("id", "img01");
         modal_img.setAttribute("class", "modal-content");
 
-        var caption = document.createElement("div");
-        caption.setAttribute("id", "caption");
+        // var caption = document.createElement("div");
+        // caption.setAttribute("id", "caption");
 
         var modalz = document.createElement("div");
         modalz.setAttribute("class", "modal-custom");
@@ -61,7 +61,7 @@ btn_add_new_stu.onclick = () => {
         modalz.setAttribute("style", "display: none;");
         modalz.appendChild(btn_close);
         modalz.appendChild(modal_img);
-        modalz.appendChild(caption);
+        // modalz.appendChild(caption);
 
         var col1 = document.createElement("div");
         col1.setAttribute("class", "col-2 col-custom col-body border");
@@ -73,9 +73,20 @@ btn_add_new_stu.onclick = () => {
         col2.setAttribute("class", "col-2 col-custom col-body border");
         col2.textContent = "Huỳnh Ngọc Thanh Thảo";
 
+        // 
         var col6 = document.createElement("div");
         col6.setAttribute("class", "col-2 col-custom col-body border");
-        col6.textContent = "";
+        
+        var inputfile = document.createElement("input");
+        inputfile.setAttribute("type", "file");
+        inputfile.setAttribute("class", "inputFile");
+
+        var showImage = document.createElement("img");
+        showImage.setAttribute("class", "img-fluid");
+        showImage.setAttribute("src", "");
+        
+        col6.appendChild(inputfile);
+        col6.appendChild(showImage);
 
         // MSSV
         var col3 = document.createElement("div");
@@ -98,8 +109,8 @@ btn_add_new_stu.onclick = () => {
         var row = document.createElement("div");
         row.setAttribute("class", "d-flex table-custom");
         row.appendChild(col1);
-        row.appendChild(col2);
         row.appendChild(col6);
+        row.appendChild(col2);
         row.appendChild(col3);
         row.appendChild(col4);
         row.appendChild(col5);
